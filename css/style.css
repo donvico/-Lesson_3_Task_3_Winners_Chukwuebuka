@@ -50,3 +50,145 @@ table {
 
 
 /* Write your css below here */
+
+*{
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	line-height: 1.5;
+}
+/* *header begins */
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	flex-direction: column;
+}
+
+.logo{
+	width: 180px;
+	height: 180px;
+	margin: 5px 0 10px 0;
+
+}
+  
+  nav ul {
+	list-style-type: none;
+	margin: 0 0 10px 0;
+  }
+  
+  nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  nav ul li a {
+	color: #000000;
+	text-decoration: none;
+	border-left: 3px solid rgb(0, 0, 0);
+	border-right: 3px solid rgb(0, 0, 0);
+	padding: .5rem;
+  }
+  nav li:hover{
+	background-color: blue;
+  }
+  
+ /* header ends */
+
+ /* main begins */
+main{
+	background-color: black;
+	flex: 1;
+}
+h1{
+	color: white;
+	margin: 20px 0 15px 0px;
+	/* font-weight: 600; */
+	font-size: large;
+	font-family: 'Vina Sans', cursive;
+}
+img{
+	width: 500px;
+	display: flex;
+	border: white 1rem solid;
+}
+section{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+	margin-top: 30px;
+
+}
+figcaption {
+	color: white;
+}
+aside{
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(74, 83, 74);
+	margin: 25px 0 0px 0;
+	padding: 20px;
+
+}
+h2{
+	font-family: 'Sigmar', cursive;
+}
+.kits{
+	width: 450px;
+	/* margin-top: 10px; */
+	border: rgb(109, 98, 98) 1rem solid;
+}
+.kitfig{
+	margin-top: 15px;
+}
+.lastb{
+	display: none;
+}
+/* main ends */
+
+/* footer begins */
+  footer {
+	background-color: #333333;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  footer p {
+	color: #FFFFFF;
+	font-family: 'Shadows Into Light', cursive;
+	font-style: italic;
+	font-size: small;
+  }
+  /* footer ends */
+  
+/* media query */
+@media screen and (min-width:768px) {
+	header, main {
+		display: flex;
+		flex-direction: row;
+	}
+	section{
+		display: flex;
+		width:65vw
+	}
+	aside{
+		margin: 0;
+		padding: 15px;
+		/* background-color: ; */
+		width: 45%;
+	}
+	h1{
+		font-size: larger;
+	}
+	.lastb{
+		display: contents;
+	}
+}
